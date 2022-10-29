@@ -1,0 +1,42 @@
+﻿@model Destinos.Models.DestinoDto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DestinoDto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NamePlace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamePlace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationPlace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationPlace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
